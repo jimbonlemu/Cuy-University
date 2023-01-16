@@ -1,0 +1,21 @@
+body{
+    background-color: teal;
+}
+
+.navbar{
+    background-color: greenyellow;
+    width: 600px;
+}
+
+.ul-navbar{ 
+    background-color: aquamarine;
+    width: 20%;
+    height: 100px;
+
+}
+
+.li-navbar{
+    border: 2px solid;
+    list-style-type: lower-roman;
+
+}
