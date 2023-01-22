@@ -1,16 +1,27 @@
 const namaGw = "Yohanes Pambudi"
-let usia = 17
+let usia = 10
 
- 
+let biodata = document.getElementById('biodata')
+
+
 function generateBiodata() {
+    let generasi;
+
     if (usia > 10 && usia < 18) {
-        console.log('anda remaja')
-    } else if (usia > 18  && usia < 30) {
-        console.log("anda dewasa")
-    } else {
-        console.log("wah elu jenis orang yang mana yak? 😅")
+        generasi = "anda generasi remaja"
+    } else if (usia > 18 && usia < 30) {
+        generasi = "generasi dewasa"
+    } else if (usia >= 30) {
+        generasi = "generasi tua"
+    } else if (usia > 2 && usia < 10) {
+        generasi = "anda anak-anak"
     }
-    
+    else {
+        generasi = "wah elu masih bayek yak? 😅"
+    }
+
+    return biodata.innerHTML = generasi;
+
 }
 
 
